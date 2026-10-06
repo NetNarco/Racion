@@ -1,0 +1,17 @@
+{
+  "name": "legkost-racion-clone",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tools/test-engine.mjs",
+    "check:ui": "node tools/check-all.mjs",
+    "check:flow": "node tools/e2e-flow.mjs",
+    "check:tabs": "node tools/check-tabs.mjs",
+    "check:layout": "node tools/check-layout.mjs 1280 intro people result",
+    "check:overflow": "node tools/check-overflow.mjs result 430",
+    "shots": "node tools/shots-full.mjs intro people meals budget sex diet tastes allergy kitchen norm days result",
+    "shots:night": "node tools/shots-full.mjs intro!night sex!night tastes!night result!night",
+    "preview:dishes": "node tools/make-dish-preview.mjs"
+  }
+}
